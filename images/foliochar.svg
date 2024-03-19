@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 329.74 571.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #97b6c7;
+        stroke-linecap: round;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="littleguy">
+      <path class="cls-1" d="M329.74,571.3v-254.21c0-77.16-68.66-136.23-144.95-124.7-49.25,7.44-89.51,43.18-102.74,91.2l-28.92,104.96c-.7,2.55-52.57,180.19-53.13,182.74"/>
+      <ellipse class="cls-1" cx="208.87" cy="86.3" rx="102.07" ry="86.3"/>
+      <g id="eyes">
+        <path class="cls-2" d="M225.26,102.51c7.4-13.84,26.26-9.62,36.61,3.33"/>
+        <ellipse cx="234.14" cy="109.01" rx="12.94" ry="13.68"/>
+        <path class="cls-2" d="M145.37,102.51c7.4-13.84,26.26-9.62,36.61,3.33"/>
+        <ellipse cx="154.25" cy="109.01" rx="12.94" ry="13.68"/>
+      </g>
+    </g>
+  </g>
+</svg>

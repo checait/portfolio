@@ -1,0 +1,840 @@
+/* resets */
+
+h1, h2, h3, p, nav ul {
+    margin: 0;
+   
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* home: basics */
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.home body {
+    display:flex;
+    flex-direction: column;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* margin:0 10px; */
+    padding:30px;
+    font-size: 0.75em;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}  
+
+header nav p {
+    font-size: 1.2em;
+    flex:1;
+}
+
+header nav a {
+    color: black;
+}
+
+header nav a:hover {
+    color: #F8B83B;
+}
+/* home: header */
+
+.home header {
+    background-color: #D9F0FC;
+    background-image: url(images/foliochar.svg);
+    background-size: 9em;
+    background-position: 85% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.home header h1 {
+    font-weight: 400;
+    font-size: 1.15em;
+    width:50%;
+}
+
+.home header #introcontent {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding-bottom: 30px; */
+    gap: 30px;
+    padding: 40px 10%;
+
+}
+
+.home header h1 #intro {
+    font-size: 1.5em;
+}
+
+.home header h1 strong {
+    color: rgb(65, 141, 205);
+}
+
+.home header #introcontent a {
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    color:rgb(64,64,64);
+    font-weight: 700;
+    text-align: center;
+    padding: 25px 20px 25px 20px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: rgb(64,64,64);
+}
+
+.home header #introcontent a:hover {
+    box-shadow: 10px 10px 0px 0px rgba(64,64,64,1);
+    transition: ease-in-out 150ms;
+
+}
+
+/* home:projects */
+
+.home .project {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    /* align-items: flex-end ; */
+    margin: 40px;
+    padding: 27px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-style: solid;
+    /* border-color: rgb(125 167 203); */
+}
+
+.home .project:hover {
+    box-shadow: 18px 18px 0 0px rgb(125 167 203);
+    /* box-shadow: 0 0 25px 4px rgb(125 167 203 / 70%); */
+    transition: ease-in-out 180ms;
+
+}
+
+.home .project a {
+    font-size: 0.8em;
+    color:#404040;
+    text-decoration:underline;
+    text-decoration-thickness:2px ;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 15px 20px 15px;
+    /* background-color: rgb(64,64,64); */
+    /* border-radius: 40px; */
+
+}
+
+.home .project .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home .project .content p u {
+    text-decoration-thickness: 2px;
+    color:rgb(65, 141, 205);
+}
+
+.home .project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home .project figure {
+    display: block;
+    margin: auto;
+} 
+
+/* post page styling */
+
+.post nav {
+    padding: 0;
+}
+
+.post {
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.post p {
+    line-height: 1.5em;
+}
+
+.post ul {
+    line-height: 1.5em;
+}
+
+.post header #headercontent {
+    padding: 30px;
+
+}
+.post header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.post header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post header h1 {
+    font-size: 1.8em;
+}
+
+.post header h1 #subhead {
+    font-weight: 400;
+    font-size: 0.5em;
+}
+
+.post > header > a {
+    align-self: center;
+    color:rgb(64,64,64);
+    font-weight: 700;
+    text-align: center;
+    padding: 25px 20px 25px 20px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: rgb(64,64,64);
+    max-width: 30%;
+}
+
+.post > header > a:hover {
+    background-color: #F8B83B;
+
+    box-shadow: 10px 10px 0px 0px rgba(64,64,64,1);
+    transition: ease-in-out 150ms;
+}
+
+/* research section styling */
+
+.post header #titlecard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.post #whyhow {
+    background-color: #1C1A26;
+    color: #fff;
+    padding: 30px;
+}
+.post #whyhow ul {
+    background-color: #D9F0FC;
+    padding: 30px 55px;
+    color: black;
+    font-size: 1.2em;
+}
+
+.post #whyhow h2{
+    text-align: right;
+    padding: 20px 0px;
+
+}
+
+.post .persona {
+    padding: 30px;
+    border-style: solid;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+.post .persona img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #1C1A26;
+    outline-offset: 10px;
+}
+
+.post .persona h3 {
+    text-align: center;
+}
+
+.post #interviews {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post #interviews img {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    fill: #404040;
+}
+
+.post #interviews .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post #interviews .quote h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.post #interviews p {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.post #interviews figure {
+    max-width: 10%;
+    height: auto;
+    flex: 1;
+}
+
+.post #interviews #takeaways {
+    margin-top: 20px;
+    padding:20px;
+    background-color: #8884B2;
+}
+
+.post #interviews #takeaways h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.post #competitiveaudit .audit {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post #competitiveaudit .auditcontent {
+    align-self: center;
+}
+.post #competitiveaudit figure {
+    max-width: 30%;
+    height: auto   ;
+}
+
+.post #competitiveaudit img {
+    max-width: 100%;
+    height: auto;
+}   
+
+.post #audittakeaways {
+    padding: 30px;
+}
+
+.post #typography {
+    margin: 30px;
+    padding: 20px;
+    background-color: #1C1A26;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post #typography span {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #D58F98;
+}
+
+.post #typography #typestyles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.post #typography h1 {
+    font-family: "Space Grotesk", sans-serif;
+    color: #F2C785;
+}
+
+.post #typography h2 {
+    color: #8884B2;
+}
+.post #typography h3 {
+    font-family: "Jaldi", sans-serif;
+    color: #92D5E4;
+}
+
+.post #typography #type {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.post #typography #colorpalette {
+    display: grid;
+    /* aspect-ratio: 1/1; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.post #typography #colorpalette #c1 {
+    /* aspect-ratio: 1/1; */
+    padding:20px;
+    margin: auto;
+    justify-self: center;
+    background-color: #1C1A26;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 20px;
+  
+}
+
+.post #typography #colorpalette #c2 {
+    padding:20px;
+    margin: auto;
+    background-color: #8884B2;
+    border-radius: 20px;
+
+}
+.post #typography #colorpalette #c3 {
+    padding:20px;
+    margin: auto;
+    background-color: #D58F98;
+    border-radius: 20px;
+
+}
+.post #typography #colorpalette #c4 {
+    padding:20px;
+    margin: auto;
+    background-color: #F2C785;
+    border-radius: 20px;
+
+}
+.post #typography #colorpalette #c5 {
+    padding:20px;
+    margin: auto;
+    background-color: #92D5E4;
+    border-radius: 20px;
+
+}
+.post #typography #colorpalette #c6 {
+    padding:20px;
+    margin: auto;
+    background-color: #F8B83B;
+    border-radius: 20px;
+
+}
+
+.post #reflection {
+    padding: 30px;
+}
+
+.post #solutionstatement {
+    text-align: center;
+}
+
+.post #solutionstatement h2 {
+    font-weight: 400;
+
+}
+
+.post #solutionstatement p {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.post #reflection img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 4px;
+}
+.post #reflection figure {
+    max-width: 100%;
+    height: auto;
+}
+
+.post #reflection .gif {
+    border-top-style: solid;
+    /* border-bottom-style: solid; */
+    /* padding: 30px 20px; */
+    margin: 30px 70px;
+    gap: 25px;
+}
+
+
+.post #conclusion {
+    display: flex;
+    justify-content: center;
+    margin: 0 70px 70px 70px;
+}
+.post #conclusion a {
+    align-self: center;
+    color:rgb(64,64,64);
+    font-weight: 700;
+    text-align: center;
+    padding: 25px 20px 25px 20px;
+    background-color: #fff;
+    border-style: solid;
+    border-color: rgb(64,64,64);
+    max-width: 80%;
+    font-size: 2em;
+}
+
+.post #conclusion a:hover {
+    background-color: #F8B83B;
+    box-shadow: 10px 10px 0px 0px rgba(64,64,64,1);
+    transition: ease-in-out 150ms;
+}
+
+/* about me styling */
+
+.about {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.about figure {
+    max-width: 100%;
+    height: auto;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: 10px;
+}
+
+.about h1 {
+    text-align: center;
+    border-bottom-style: solid;
+    max-width: 70%;
+    padding-bottom: 20px;
+}
+.about main {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* contact page styling */
+
+.contact {
+    margin: 30px;
+}
+
+.contact h1 {
+    padding: 30px 0 30px 0;
+}
+.contact img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact figure {
+    max-width: 30%;
+    height: auto;
+}
+
+.contact main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.contact .contactinfo {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 3px;
+    
+}
+
+.contact .contactinfo:hover {
+    box-shadow: 10px 10px 0px 0px rgba(64,64,64,1);
+    transition: ease-in-out 150ms;
+}
+
+@media screen and (min-width:600px){
+    nav {
+        padding: 40px;
+    }
+
+    nav {
+        font-size: 1em;
+        padding: 40px 70px;
+    }
+    
+    .home header {
+        background-position: 80% 100%;
+        background-size: 10em;
+    }
+
+    .home header #introcontent {
+        padding: 40px 40% 40px 20%;
+    }
+    .home header #innerbox #introcontent a {
+        align-self: flex-start;
+        margin-right: 0;
+    }
+    .home header h1{
+        font-size: 1.8em;
+        width: 100%;
+    }
+
+
+
+    .home .project {
+        margin: 90px;
+    }
+    .home .project img {
+        max-width: 85%;
+        height: auto;
+    }
+
+    .home .project .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 55px 25px;
+    }
+
+    .home .project .description {
+        align-self: flex-start;
+    }
+
+    .home .project .content figure {
+        flex: 1.5;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .home .project .content p {
+        flex:1;
+        font-size: 1.2em;
+    }
+
+    .home .project a {
+        font-size: 1.3em;
+    }
+    
+    /* post page styling */
+    .post nav {
+        padding: 40px 70px;
+    }
+    
+    .post header #headercontent {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 40px;
+    }
+
+    .post header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .post #research #whyhow {
+        padding: 70px;
+    }
+
+    .post #userpersonas {
+        display: flex;
+        margin: 40px 90px;
+    }
+
+    .post #interviews {
+        margin: 70px;
+    }
+    .post #interviews .quote {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .post #interviews figure {
+        max-width: 5%;
+        height: auto;
+    }
+    .post #interviews .question h3 {
+        /* font-weight: 400; */
+        /* font-size: 1.1em; */
+        flex: 1;
+        text-align: left;
+        flex-basis: 100%;
+
+    }
+    .post #interviews .question p {
+        /* font-weight: 400;
+        font-size: 1em; */
+        flex: 1;
+        text-align: left;
+        flex-basis: 100%;
+
+    }
+    .post #interviews .question {
+        display: flex;
+        align-items: center;
+    }
+
+    .post #interviews .question figure {
+        flex: 1;
+        flex-basis: 100%;
+    }
+
+    .post #competitiveaudit {
+        margin: 30px 70px;
+    }
+
+    .post #competitiveaudit {
+        display: flex;
+    }
+
+    .post #competitiveaudit #proscons{
+        flex:1;
+        flex-basis: 100%;
+        padding: 0 30px 0 0;
+    }
+
+    .post #competitiveaudit #audittakeaways {
+        flex:2;
+        flex-basis: 100%;
+        font-weight: 700;
+        font-size: 1.2em;
+        align-self: center;
+        /* border-left-style: solid; */
+        /* border-left-width: 3px; */
+        padding: 0 0 0 30px;
+    }
+
+    .post #competitiveaudit .audit {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 30px 0;
+    }
+
+    .post #competitiveaudit .audit:first-of-type {
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+    }
+
+    .post #competitiveaudit .audit .auditcontent {
+        flex:2;
+    }
+
+    .post #competitiveaudit .audit figure {
+        flex:1;
+        max-width: 20%;
+        height: auto;
+    }
+    
+    .post #competitiveaudit .audit img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .post #typography {
+        margin: 30px 70px;
+        padding: 40px;
+    }
+
+    .post #typography #colorpalette {
+        display: flex;
+        gap: 0;
+    }
+
+    .post #typography #colorpalette p {
+        aspect-ratio: 1;
+        font-size: 0.8em;
+    }
+
+    .post #typography #description {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .post #typography #description p {
+        flex:1;
+        flex-basis: 100%;
+    }
+
+    .post #typography #description #typestyles {
+        flex:1;
+        flex-basis: 100%;
+    }
+
+    .post #reflection #solutionstatement {
+        padding: 30px;
+    }
+
+    .post #reflection .gif {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10%;
+        align-items: center;
+    }
+
+    .post #reflection p {
+        flex:1;
+        font-size: 1.2em;
+        flex-grow: 1;
+    }
+
+    /* about page styling */
+    .about main {
+        flex-direction: row;
+    }
+
+    .about section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        flex: 1;
+    }
+
+    .about figure {
+        flex: 1;
+        max-width: 30%;
+        
+    }
+
+    .contact .contactinfo {
+        flex-direction: row;
+        flex: 1;
+        max-width: 50%;
+        font-size: 1.2em;
+        
+    }
+
+    .contact figure {
+        max-width: 20%;
+    }
+
+   
+}
