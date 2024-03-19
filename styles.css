@@ -827,13 +827,14 @@ header nav a:hover {
     .contact .contactinfo {
         flex-direction: row;
         flex: 1;
-        max-width: 50%;
+        max-width: 35%;
         font-size: 1.2em;
         
     }
 
     .contact figure {
         max-width: 20%;
+        height: auto;
     }
 
    
