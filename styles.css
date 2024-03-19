@@ -824,10 +824,17 @@ header nav a:hover {
         
     }
 
+    .contact #allcontact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 55px;
+        margin: 20px 100px 100px 100px;
+    }
     .contact .contactinfo {
         flex-direction: row;
         flex: 1;
-        max-width: 35%;
+        max-width: 100%;
+        height: auto;
         font-size: 1.2em;
         
     }
