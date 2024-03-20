@@ -256,6 +256,7 @@ header nav a:hover {
     border-style: solid;
     margin: 50px;
     border-radius: 20px;
+    flex:1;
 }
 
 .post .persona img {
@@ -351,29 +352,10 @@ header nav a:hover {
     gap: 20px;
 }
 
-.post #typography span {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 700;
-    font-size: 1.1em;
-    color: #D58F98;
-}
-
 .post #typography #typestyles {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-.post #typography h1 {
-    font-family: "Space Grotesk", sans-serif;
-    color: #F2C785;
-}
-
-.post #typography h2 {
-    color: #8884B2;
-}
-.post #typography h3 {
-    font-family: "Jaldi", sans-serif;
-    color: #92D5E4;
 }
 
 .post #typography #type {
@@ -394,11 +376,8 @@ header nav a:hover {
     padding:20px;
     margin: auto;
     justify-self: center;
-    background-color: #1C1A26;
-    border-style: solid;
-    border-color: #fff;
     border-radius: 20px;
-  
+
 }
 
 .post #typography #colorpalette #c2 {
@@ -411,28 +390,24 @@ header nav a:hover {
 .post #typography #colorpalette #c3 {
     padding:20px;
     margin: auto;
-    background-color: #D58F98;
     border-radius: 20px;
 
 }
 .post #typography #colorpalette #c4 {
     padding:20px;
     margin: auto;
-    background-color: #F2C785;
     border-radius: 20px;
 
 }
 .post #typography #colorpalette #c5 {
     padding:20px;
     margin: auto;
-    background-color: #92D5E4;
     border-radius: 20px;
 
 }
 .post #typography #colorpalette #c6 {
     padding:20px;
     margin: auto;
-    background-color: #F8B83B;
     border-radius: 20px;
 
 }
@@ -500,6 +475,103 @@ header nav a:hover {
     transition: ease-in-out 150ms;
 }
 
+/* post-specific styling */
+
+#post1 #typography span {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #D58F98;
+}
+
+#post1 #typography h1 {
+    font-family: "Space Grotesk", sans-serif;
+    color: #F2C785;
+}
+
+#post1 #typography h2 {
+    color: #8884B2;
+}
+#post1 #typography h3 {
+    font-family: "Jaldi", sans-serif;
+    color: #92D5E4;
+}
+
+#post1 #c1 {
+    background-color: #1C1A26;
+    border-style: solid;
+    border-color: #fff;
+}
+
+#post1 #c2 {
+    background-color: #8884B2;
+}
+
+#post1 #c3 {
+    background-color: #D58F98;
+}
+
+#post1 #c4 {
+    background-color: #F2C785;
+}
+
+#post1 #c5 {
+    background-color: #92D5E4;
+}
+
+#post1 #c6 {
+    background-color: #F8B83B;
+}
+
+#post2 #typography span {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #FDF1C6;
+}
+
+#post2 #typography h1 {
+    font-family: "sonorousregular", sans-serif;
+    kerning: 20px;
+    color: #B49ED0;
+}
+
+#post2 #typography h2 {
+    font-family: "sonorousregular", sans-serif;
+    color: #B49ED0;
+}
+
+#post2 #typography h3 {
+    font-family: "Noto Sans", sans-serif;
+    color: #B49ED0;
+}
+
+#post2 #c1 {
+    background-color: #1E2024;
+    border-style: solid;
+    border-color: #fff;
+}
+
+#post2 #c2 {
+    background-color: #E5DDEF;
+}
+
+#post2 #c3 {
+    background-color: #FDF1C6;
+    color: #1E2024;
+}
+
+#post2 #c4 {
+    background-color: #9888A4;
+}
+
+#post2 #c5 {
+    background-color: #B49ED0;
+}
+
+#post2 #c6 {
+    background-color: #DDCD92;
+}
 /* about me styling */
 
 .about {

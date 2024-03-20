@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hubbble Post</title>
+    <title>NightBuddy Post</title>
 
     <!-- Normalize CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
@@ -15,16 +15,23 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <!-- CSS Stylesheet -->
     <link href="styles.css" rel="stylesheet">
 </head>
-<body id="post1" class="post">
+
+<style>
+    @font-face {
+    font-family: 'sonorousregular';
+    src: url('sonorous-webfont.woff2') format('woff2'),
+         url('sonorous-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+    }
+</style>
+
+<body id="post2" class="post">
     <header>
         <nav>
             <p><a href="index.html">Caitlin Chen</a></p>
@@ -36,37 +43,37 @@
         </nav>
         <div id="headercontent">
             <figure>
-                <img src="images/hubbble/hub-display.png">
+                <img src="images/nightbuddy/nightbuddy-display.png">
             </figure>
 
             <div id="titlecard"> 
-                <h1>Hubbble <br><span id="subhead">UI Designer | March 2024</span></h1>
+                <h1>NightBuddy <br><span id="subhead">UI Designer | March 2023</span></h1>
         
-                <p><strong>A design-centered networking app providing designers a streamlined platform for starting projects, networking, user-testing, and critiquing.</strong></p>
+                <p><strong>A mental health and wellness app that aims to help the user reach their sleep goals with a virtual pet that sleeps alongside them. </strong></p>
             </div>
         </div>
         
         
-        <a href="https://www.figma.com/proto/zReboGHHIDe7ayq5hMAmXR/HUBBBLE?page-id=0%3A1&type=design&node-id=12-55&viewport=-114%2C758%2C0.22&t=PS37s41WBrDix1Pu-1&scaling=scale-down&starting-point-node-id=12%3A55&mode=design">Try it out</a>
+        <a href="https://www.figma.com/proto/NcwwivV24FgzHpU29iAzAi/NightBuddy?page-id=0%3A1&type=design&node-id=0-1&viewport=-935%2C-2090%2C0.28&t=V1aFQhDLEjgGRRnq-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design">Try it out</a>
     </header>
 
     <section id="research">
         <section id="whyhow">
             <div>
                 <h2>why?</h2>
-                <p>Designers live in a <strong>collaborative </strong>environment. A world centered around user-based media requires <strong>connections</strong> between designers, developers, and researchers to fully realize a project, which can be difficult with <strong>current platforms focused on professionalism.</strong></p>
+                <p>Sleep is a major factor in determining how humans function throughout the day. Research shows that the majority of students <strong>don't get enough sleep. </strong>Most get around <strong>6 or less</strong>, not reaching the recommended 8.</p>
             </div>
     
             <div id="how">
                 <h2>how?</h2>
-                <p>Hubbble aims to provide a basis for connections between designers, developers, and anyone else in the related creative field. An app geared towards designers, with a welcoming community in which users can:</p> 
+                <p>The goal of NightBuddy is to gamify the average night, providing incentive to sleep through its reward system and personalization of the buddy. With NightBuddy, users have access to:</p> 
     
                 <ul>
-                    <li>build real connections</li>
-                    <li>find team members for personal projects</li>
-                    <li>request critiques from community members</li>
+                    <li>resources to improve sleep quality</li>
+                    <li>a built-in alarm clock</li>
+                    <li>a companion that goes to sleep with them</li>
                 </ul>
-                <p>We veered away from <u>over-professionalism</u> by making friendly design choices, with rounded corners and a colorful theme, while still being navigable and minimalistic.</p>
+                <p>To appeal to a young adult audience, the app has "cute" themes, with rounded corners and typography to create a friendly environment.</p>
                 
             </div>
         </section>
@@ -75,36 +82,42 @@
         <section id="userpersonas">
             <article class="persona">
                 <figure>
-                    <img src="images/hubbble/persona-sam.jpg" alt="persona-sam" width="700" height="700">
+                    <img src="images/nightbuddy/gabby-persona.jpg" alt="persona-gabby" width="700" height="700">
                 </figure>
         
-                <h3>Sam the Skill Enthusiast</h3>
+                <h3>Gabby</h3>
                 <div id="personainfo">
                     <h4>Background</h4>
-                    <p>Sam is a mid-career designer looking to stay updated with the latest design trends and technologies. Enjoys learning new skills to remain competitive in the evolving design landscape.</p>
+                    <p>
+                        Gabby is a third year college student who works part-time at a coffee shop. She likes playing mobile games in her free time and volunteers at an animal shelter.
+                    </p>
                     <h4>Challenges</h4>
-                    <p>Struggles with finding relevant and engaging skill development opportunities. Seeks a solution that curates personalized skill development plans and resources.</p>
+                    <p>
+                        Struggles with falling asleep, and often finds herself scrolling on her phone late at night.
+                    </p>
                 </div>
             </article>
             
             
             <article class="persona">
                 <figure>
-                    <img src="images/hubbble/persona-nina.jpg" alt="persona-nina" width="700" height="700">
+                    <img src="images/nightbuddy/sabrina-persona.jpg" alt="persona-sabrina" width="700" height="700">
                 </figure>
                 
-                <h3>Nina the Networking Novice</h3>
+                <h3>Sabrina</h3>
                 <div id="personainfo">
                     <h4>Background</h4>
-                    <p>Nina is a junior designer who finds networking challenging and intimidating. Recognizes the importance of building professional connections but doesn't know where to start.</p>
+                    <p>Nina is a junior designer who finds networking challenging and intimidating. Recognizes the importance of building professional connections but doesn't know where to start.
+                        Sabrina is a first year biology student at the University of Phoenix, Arizona. She's still getting adjusted to college and having a different schedule and lifestyle from high school.
+                    </p>
                     <h4>Challenges</h4>
-                    <p>Needs assistance in navigating networking events and establishing meaningful connections. Desires a platform that facilitates easy and purposeful networking within the design community.</p>
+                    <p>Struggles with organizational skills and time management. Finds herself overwhelmed by classes, work, and social life. Desires a platform that can assist her getting her schedule organized.</p>
                 </div>
             </article>
         </section>
 
 
-        <section id="interviews">
+        <!-- <section id="interviews">
             <div class="quote">
                 <div class="question">
                     <figure>
@@ -194,30 +207,32 @@
             <div id="audittakeaways">
                 <p>We want to put the best qualities of our competitors into Hubbble, and take out the worst. Users should have a variety of tools at their disposal to engage with their community while still being able to easily navigate through the app. </p>
             </div>
-        </section>
+        </section> -->
 
     </section>
 
     <section id="action">
         <section id="typography">
             <div id="description">
-                <p>Our <span>typography choices</span> were made with <u>lightness</u>, <u>ease of reading</u>, and <u>branding</u> in mind.  We felt that Space Grotesk was fitting for our space-themed platform. The choice of different fonts for headers and body text was made to increase visual stimulation and keep the interface looking fresh.</p>
+                <p>Our <span>typography choices</span> were made with <u>lightness</u>, <u>ease of reading</u>, and <u>branding</u> in mind.  We felt that Space Grotesk was fitting for our space-themed platform. The choice of different fonts for headers and body text was made to increase visual stimulation and keep the interface looking fresh.
+                
+                These typography choices were made to create a <u>fun, bubbly</u> environment for users, while still allowing <u>full readability.</u> Two different font styles were used to increase variation in the interface without the experience becoming overwhelming.</p>
             
                 <div id="typestyles">
-                    <h1>Title<div id="type">Space Grotesk 50pt</div></h1>
-                    <h2>Header<div id="type">IBM Plex Sans 20pt</div></h2>
-                    <h3>Body<div id="type">Jaldi 16pt</div></h3>
+                    <h1>Title<div id="type">Sonorous 35pt</div></h1>
+                    <h2>Header<div id="type">Sonorous 20pt</div></h2>
+                    <h3>Body<div id="type">Noto Sans 20pt</div></h3>
 
                 </div> 
             </div>
                  
             <div id="colorpalette">
-                <p id="c1">#1C1A26</p>
-                <p id="c2">#8884B2</p>
-                <p id="c3">#D58F98</p>
-                <p id="c4">#F2C785</p>
-                <p id="c5">#92D5E4</p>
-                <p id="c6">#F8B83B</p>
+                <p id="c1">#1E2024</p>
+                <p id="c2">#E5DDEF</p>
+                <p id="c3">#FDF1C6</p>
+                <p id="c4">#9888A4</p>
+                <p id="c5">#B49ED0</p>
+                <p id="c6">#DDCD92</p>
             </div>
         </section>
 
@@ -226,36 +241,43 @@
     <section id="reflection">
         <div id="solutionstatement">
             <h2>The Goal?</h2>
-            <p>To create a platform that encourages personal growth as a designer.</p>
+            <p>To provide users full incentive and resources to increase sleep.</p>
         </div>
 
-        <div class="gif" id="homegif">
+        <div class="gif" id="startupgif">
+            <figure>
+              <img src="images/nightbuddy/startupgif.gif" alt="startupgif" width="330" height="712">
+          </figure>
+          <p>NightBuddy offers a customizable experience. The user inputs their age, current hours, and desired hours to set their sleep goals. Personal connection between the user and the app is increased with different choices of Buddies.</p>  
+          </div>
+
+        <div class="gif" id="maingif">
           <figure>
-            <img src="images/hubbble/homegif.gif" alt="homegif" width="330" height="712">
+            <img src="images/nightbuddy/maingif.gif" alt="maingif" width="330" height="712">
         </figure>
-        <p>The dark-themed home page recommends relevant posts and hubbbles for the user. From here, the user navigates to a weekly challenge page, where a new design challenge is posted every week. Users are encouraged to share their designs or seek out mentorship.</p>  
+        <p>An easy and convenient sleep tracker. The user's Buddy goes to sleep when they sleep, wakes up when they wake up, and their hours are tracked. Rewards are gained if the user meets their sleep goal.</p>  
         </div>
         
-        <div class="gif" id="lfggif"> 
+        <div class="gif" id="todogif"> 
             <figure>
-                <img src="images/hubbble/lfggif.gif" alt="lfggif" width="330" height="712">
+                <img src="images/nightbuddy/todogif.gif" alt="todogif" width="330" height="712">
             </figure>
 
-            <p>The "Expand Your Hubbble" page is one of two pages accessible from the magnifying glass in the navigationbar. On this page, users can browse and join different hubbbles, each of which serves a different purpose.</p>
+            <p>A built-in To-Do list allows the user to enter their own tasks, helping with time management and task organization. A visualization of completed tasks incentivizes users to keep completing them.</p>
         </div>
         
 
-        <div class="gif" id="profilegif"> 
+        <div class="gif" id="tacticsgif"> 
             <figure>
-            <img src="images/hubbble/profilegif.gif" alt="profilegif" width="330" height="712">
+            <img src="images/nightbuddy/tacticsgif.gif" alt="tacticsgif" width="330" height="712">
             </figure>
 
-            <p>A dating-app-esque swiping system puts a face to a name. To increase personal connection between users and tackle the issue of nameless, faceless users, interaction between designers is encouraged through the profile-browsing feature.</p>
+            <p>A "Sleep Resources" page provides users with options to play music, podcasts, or ASMR to aid in falling asleep. This page also has links to articles on improving sleep quality, as well as guided tutorials on meditation and breathing tactics.</p>
         </div>
        
 
         <section id="conclusion">
-            <a href="https://www.figma.com/proto/zReboGHHIDe7ayq5hMAmXR/HUBBBLE?page-id=0%3A1&type=design&node-id=12-55&viewport=-114%2C758%2C0.22&t=PS37s41WBrDix1Pu-1&scaling=scale-down&starting-point-node-id=12%3A55&mode=design">Try it out</a>       
+            <a href="https://www.figma.com/proto/NcwwivV24FgzHpU29iAzAi/NightBuddy?page-id=0%3A1&type=design&node-id=0-1&viewport=-935%2C-2090%2C0.28&t=V1aFQhDLEjgGRRnq-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design">Try it out</a>       
         </section>
     </section>
     
