@@ -57,6 +57,9 @@ header nav a:hover {
     background-size: 9em;
     background-position: 85% 100%;
     background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+
 }
 
 
@@ -74,6 +77,8 @@ header nav a:hover {
     /* padding-bottom: 30px; */
     gap: 30px;
     padding: 40px 10%;
+    position: absolute;
+    top: 30%;
 
 }
 
@@ -183,12 +188,18 @@ header nav a:hover {
 
 .post header #headercontent {
     padding: 30px;
+    /* max-width: 80%;
+    height: auto; */
+    justify-content: center;
 
 }
 .post header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    /* height: 100vh; */
+
 }
 .post header img {
     max-width: 100%;
@@ -231,7 +242,45 @@ header nav a:hover {
     gap: 15px;
 }
 
+.post #overview {
+    display: flex;
+    /* justify-content: space-around; */
+    padding:70px;
+    gap: 70px;
+}
 
+.post #overview #tags {
+    flex: 1;
+}
+
+.post #overview #tags ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+
+
+}
+.post #overview #tags li {
+    list-style-type: none;
+    border: #1C1A26;
+    border-style: solid;
+
+    align-self: center;
+    color:rgb(64,64,64);
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: rgb(64,64,64);
+    border-radius: 10px;
+    /* max-width: 30%; */
+}
+
+.post #overview #projectdescription {
+    flex: 1;
+}
 
 .post #whyhow {
     background-color: #1C1A26;
@@ -246,8 +295,8 @@ header nav a:hover {
 }
 
 .post #whyhow h2{
-    text-align: right;
-    padding: 20px 0px;
+    /* text-align: right; */
+    padding: 40px 0px;
 
 }
 
@@ -572,6 +621,16 @@ header nav a:hover {
 #post2 #c6 {
     background-color: #DDCD92;
 }
+
+#post3 header {
+    max-height: 100vh;
+    width: auto;
+}
+#post3 header figure {
+    max-width:45%;
+    height: auto;
+}
+
 /* about me styling */
 
 .about {
@@ -657,7 +716,7 @@ margin
     
     .home header {
         background-position: 80% 100%;
-        background-size: 10em;
+        background-size: 17em;
     }
 
     .home header #introcontent {
@@ -721,6 +780,11 @@ margin
     }
 
     .post header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .post header figure {
         max-width: 100%;
         height: auto;
     }
