@@ -111,6 +111,9 @@ header nav a:hover {
 
 /* home:projects */
 
+#projectsection {
+    padding: 90px 150px;
+}
 .home .project {
     display: flex;
     flex-direction: column;
@@ -153,6 +156,17 @@ header nav a:hover {
 .home .project .content p u {
     text-decoration-thickness: 2px;
     color:rgb(65, 141, 205);
+}
+
+
+.home .project .content2 {
+    display: flex;
+}
+
+.home .content-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 20;
 }
 
 .home .project img {
@@ -236,6 +250,10 @@ header nav a:hover {
 
 /* research section styling */
 
+.post #research, .post #action, .post #reflection {
+    padding: 90px;
+}
+
 .post header #titlecard {
     display: flex;
     flex-direction: column;
@@ -243,10 +261,16 @@ header nav a:hover {
 }
 
 .post #overview {
-    display: flex;
     /* justify-content: space-around; */
-    padding:70px;
-    gap: 70px;
+    /* padding:70px; */
+    margin: 30px 25px 0px 25px;
+    padding: 50px 30px 30px 30px;
+    border-top: #000;
+    border-top-style:solid;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .post #overview #tags {
@@ -255,12 +279,11 @@ header nav a:hover {
 
 .post #overview #tags ul {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 20px;
-    
-
-
+    padding-inline-start: 0;
 }
+
 .post #overview #tags li {
     list-style-type: none;
     border: #1C1A26;
@@ -283,21 +306,27 @@ header nav a:hover {
 }
 
 .post #whyhow {
-    background-color: #1C1A26;
-    color: #fff;
+
+    /* background-color: #1C1A26; */
+    /* color: #fff; */
     padding: 30px;
+}
+
+.post #whyhow img {
+    max-width: 100%;
+    height: auto;
 }
 .post #whyhow ul {
     background-color: #D9F0FC;
     padding: 30px 55px;
     color: black;
     font-size: 1.2em;
+    border-radius: 40px;
 }
 
 .post #whyhow h2{
     /* text-align: right; */
     padding: 40px 0px;
-
 }
 
 .post .persona {
@@ -322,52 +351,13 @@ header nav a:hover {
     text-align: center;
 }
 
-.post #interviews {
-    padding: 30px;
+
+.post #competitiveaudit figure {
     display: flex;
-    flex-direction: column;
-}
+    gap: 20px;
 
-.post #interviews img {
-    margin: auto;
-    max-width: 100%;
-    height: auto;
-    fill: #404040;
 }
-
-.post #interviews .quote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.post #interviews .quote h3 {
-    text-align: center;
-    font-weight: 400;
-}
-
-.post #interviews p {
-    font-size: 1.2em;
-    font-weight: 700;
-}
-.post #interviews figure {
-    max-width: 10%;
-    height: auto;
-    flex: 1;
-}
-
-.post #interviews #takeaways {
-    margin-top: 20px;
-    padding:20px;
-    background-color: #8884B2;
-}
-
-.post #interviews #takeaways h2 {
-    text-align: center;
-    color: #fff;
-}
-
-.post #competitiveaudit .audit {
+/* .post #competitiveaudit .audit {
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -385,7 +375,7 @@ header nav a:hover {
 .post #competitiveaudit img {
     max-width: 100%;
     height: auto;
-}   
+}    */
 
 .post #audittakeaways {
     padding: 30px;
@@ -538,6 +528,10 @@ header nav a:hover {
     color: #F2C785;
 }
 
+#post1 #typography #typelabel {
+    color: white;
+}
+
 #post1 #typography h2 {
     color: #8884B2;
 }
@@ -622,13 +616,46 @@ header nav a:hover {
     background-color: #DDCD92;
 }
 
+
 #post3 header {
     max-height: 100vh;
     width: auto;
 }
+
 #post3 header figure {
     max-width:45%;
     height: auto;
+}
+
+#post3 #whyhow {
+    background-color: rgb(34, 34, 34);
+}
+
+#post3 #c1 {
+    background-color: #465168;
+    border-style: solid;
+    border-color: #fff;
+}
+
+#post3 #c2 {
+    background-color: #E5DDEF;
+}
+
+#post3 #c3 {
+    background-color: #FDF1C6;
+    color: #1E2024;
+}
+
+#post3 #c4 {
+    background-color: #9888A4;
+}
+
+#post3 #c5 {
+    background-color: #B49ED0;
+}
+
+#post3 #c6 {
+    background-color: #DDCD92;
 }
 
 /* about me styling */
@@ -665,7 +692,7 @@ header nav a:hover {
 }
 
 /* contact page styling */
-margin
+
 
 .contact h1 {
     padding: 30px 0 30px 0;
@@ -768,6 +795,7 @@ margin
     }
     
     /* post page styling */
+
     .post nav {
         padding: 40px 70px;
     }
@@ -789,61 +817,87 @@ margin
         height: auto;
     }
 
+    .post #overview {
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+        margin: 30px 70px 0px 70px;
+    }
+
+    .post #overview #tags ul {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+
+    .post #whyhow {
+        display: flex;
+        gap:40px;
+    }
+
+    .post #research {
+        padding-bottom: 0;
+    }
+    .post>#research>#whyhow>div {
+        flex: 1;
+    }
+
+    .post #whyhow figure {
+        flex:1;
+        margin: auto;
+    }
+
     .post #research #whyhow {
         padding: 70px;
     }
 
+    .post #userresearch {
+        padding: 90px;
+        display: flex;
+        align-items: center;
+        gap: 90px;
+    }
+
+    .post #userresearch h2 {
+        margin-bottom: 20px;
+    }
+    .post #results {
+        max-width: 50%;
+        
+    }
+    .post #data {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
     .post #userpersonas {
         display: flex;
+        align-items: center;
         margin: 40px 90px;
     }
 
-    .post #interviews {
-        margin: 70px;
+    .post #userpersonas h2 {
+        margin-bottom: 20px;
     }
-    .post #interviews .quote {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
+    .post #userpersonas figure {
+        max-width: 40%;
+        height: auto;    
+    }
+
+    .post #userpersonas img {
+        max-width: 100%;
     }
     
-    .post #interviews figure {
-        max-width: 5%;
-        height: auto;
-    }
-    .post #interviews .question h3 {
-        /* font-weight: 400; */
-        /* font-size: 1.1em; */
-        flex: 1;
-        text-align: left;
-        flex-basis: 100%;
-
-    }
-    .post #interviews .question p {
-        /* font-weight: 400;
-        font-size: 1em; */
-        flex: 1;
-        text-align: left;
-        flex-basis: 100%;
-
-    }
-    .post #interviews .question {
-        display: flex;
-        align-items: center;
-    }
-
-    .post #interviews .question figure {
-        flex: 1;
-        flex-basis: 100%;
-    }
+    /* .post #interviews {
+        margin: 70px;
+    } */
+    
 
     .post #competitiveaudit {
-        margin: 30px 70px;
+        /* margin: 30px 70px; */
     }
 
-    .post #competitiveaudit {
-        display: flex;
-    }
 
     .post #competitiveaudit #proscons{
         flex:1;
